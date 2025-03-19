@@ -1,0 +1,76 @@
+<section class="flex justify-center mx-auto py-16 xl:w-[80%] sm:w-full xs:w-[75%]">
+    <div class="sm:w-[50%] xs:w-full ">
+        <h2 class="text-5xl w-fit font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-700 from-30% via-orange-500 via-70% to-slate-50">Contact Me</h2>
+        <p class="opacity-50 ">Feel Free to reach out for collaborations, inquiries,or just a friendly coding chat anytime:</p>
+
+        <form
+        id="form"
+        autocomplete="off" 
+        class="flex flex-col py-2 mt-1">
+
+            <!--Name -->
+
+            <label for="from_name"
+            class="font-bold text-[17px] opacity-90"
+            >Name</label>
+
+            <input type="text"
+            class="bg-transparent border-white/50 border-2 placeholder:text-white/50 px-3 py-[5px] rounded-md mb-3 md:w-[80%] xs:w-full " 
+            name="from_name" 
+            id="from_name"
+            placeholder="What's your name?">
+
+
+            <!--Message -->
+
+            <label for="message"
+            class="font-bold text-[17px] opacity-90"
+            >Message</label>
+
+            <input type="text"
+            name="message" id="message"
+            class="bg-transparent border-white/50 border-2 placeholder:text-white/50 px-3 py-[5px] rounded-md mb-3 md:w-[80%] xs:w-full "
+            placeholder="Type here...">
+
+
+            <!--Buttom -->
+
+            <button class="border-2 border-gray-400 rounded-md bg-transparent w-fit px-8 py-1 my-4 "
+            id="button">Submit</button>
+        </form>
+    </div>
+    <img class=" w-[220px]  self-center md:w-[20%] xs:w-0" src="/public/macbook.png" alt="#">
+
+
+
+<style>
+img {
+  height: 220px;
+  width: 220px;
+  margin: 0 auto;
+  background-color: white;
+  animation-name: stretch;
+  animation-duration: 2.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1.4);
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+  }
+  50% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: black;
+  }
+}
+</style>

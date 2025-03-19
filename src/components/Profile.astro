@@ -1,0 +1,49 @@
+<article class="w-full h-[500px] overflow-hidden flex flex-col items-center justify-center relative md:px-20 xs:px-0">
+    <header class="text-center absolute top-0 z-0">
+        <span class="block font-bold sm:text-[55px] sm:loading-[61px] text-stone-500">Passionate young programmer</span>
+        <span class="block font-bold sm:text-[55px] sm:loading-[61px]" >Crafting digital dreams with</span>
+        <span class="block font-bold sm:text-[55px] sm:loading-[61px]">Creatice code wizzard</span>
+    </header>
+
+        <img src="/public/student-profile2.png" alt="#" class="imag object-cover relative animate-fade-up"/>
+</article>
+
+
+
+<style>
+
+    /*Degradado-img*/
+    .imag {
+        mask-image: linear-gradient(
+            black 10%,
+            transparent 50%
+            );
+
+        
+    }
+
+
+    .imag {
+        z-index: -1;
+        top: 100%; /* Ajusta según sea necesario */
+        left: 35%; /* Ajusta según sea necesario */
+        transform: translate(-50%, -50%); /* Centra la imagen */
+        width: auto; /* Ajusta el tamaño según sea necesario */
+        height: 900px; /* Ajusta el tamaño según sea necesario */
+        object-fit: cover; /* Ajusta cómo se muestra la imagen */
+        border-radius: 12px; /* Añade radio para bordes redondeados */
+    }
+
+    /* Ejemplo de media query para ajustar la imagen en pantallas más pequeñas */
+    @media (max-width: 768px) {
+        .fixed-image {
+            height: 600px; /* Ajusta la altura en pantallas más pequeñas */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .fixed-image {
+            height: 400px; /* Ajusta la altura en pantallas muy pequeñas */
+        }
+    }
+</style>

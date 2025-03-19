@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar.astro"
+import Profile from "../components/Profile.astro"
+import Separator from "../components/Separator.astro"
+import About from "../components/About.astro"
+import Technologies from "../components/Technologies.astro"
+import Projects from "../components/Projects.astro"
+import Form from "../components/Form.astro"
+
+/**************************************************************************** */
+import {BackgroundBeamsWithCollisionDemo} from "@/components/Mycomponente";
+
+/***************************************************************************** */
+import { SparklesPreview } from "@/components/SparklesPreview"
+
+
+---
+
+<Layout title='Home-Page'>
+<Navbar/>
+  <main class="mt-16 scroll-mt-16" id="home">
+    <BackgroundBeamsWithCollisionDemo client:load />
+    <Profile/>
+    <SparklesPreview client:load/>
+    <Separator/>
+    
+    <About/>
+    <Technologies/>
+    <Projects/>
+    <Form/>
+  </main>
+</Layout>
